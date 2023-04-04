@@ -4,7 +4,10 @@
     --bg-body-color:  FFFFFF;
     
     --bg-cards-color: A4CADC;
-    --btn-colors: linear-gradient(#86b8d0,#4995b9)
+    --btn-colors: linear-gradient(#86b8d0,#4995b9);
+
+    --padding-titulos-grandes: 20px 20px 20px 20px;
+    --margin-titulos-grandes: 35px 30px 30px 0px;
 
 }
 
@@ -21,7 +24,7 @@ body{
 }
 .container{
     max-width: 1200px;
-    margin: auto;
+    margin: auto ;
 }
 
 /* Menu */
@@ -38,7 +41,9 @@ body{
     left: 0%;
     right: 0%;
     padding: 0%;
-    background-color: rgb(32, 34, 35);
+    background-color: rgb(255, 255, 255, .05);
+    backdrop-filter: blur(10px);
+   
 }
 .nav__bar ul{
     display: flex;
@@ -84,13 +89,9 @@ body{
     right: 65px;
     top: 80px;
     width: max-content;
-    background-color:rgba(17, 50, 148, 0.487) ;
+    background-color: rgba(255, 255, 255, 0.09);
+    backdrop-filter: blur(10px);
 }
-
-
-
-
-
 
 .hambur{
     display: none;
@@ -101,4 +102,52 @@ body{
 }
 
 
+/* Inicio main */
+.img__fondo{
+    background-image: url(./imgs/background/autocity-seis-marcas.webp);
+    height: 100vh;
+    background-size: cover;
+    background-position: fixed;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 100%;
+}
+.inicio{
+    position: relative;
+    top: 120px;
 
+
+}
+.inicio__txt h1{
+    padding: var(--padding-titulos-grandes);
+    margin: var(--margin-titulos-grandes);
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 700;
+}
+.inicio__txt p{
+    padding: var(--padding-titulos-grandes);
+    margin: var(--margin-titulos-grandes);
+    font-weight: 500;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+.btns{
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.flecha{
+    width: 100px;
+    height: 300px;
+    padding: 1px;
+}
+
+.btn-1,.btn-2{
+    display: inline-block;
+    width: 250px;
+    padding: 16px 20px;
+    margin: 50px 20px;
+    border-radius: 30px;
+}
