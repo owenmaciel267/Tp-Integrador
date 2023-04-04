@@ -24,13 +24,14 @@ body{
 }
 .container{
     max-width: 1200px;
-    margin: auto ;
+    margin: auto;
 }
 
 /* Menu */
 .img__logo{
     width: 150px;
     height: 80px;
+    margin: 0 300px 0;
 }
 .menu{
     position: fixed;
@@ -43,7 +44,10 @@ body{
     padding: 0%;
     background-color: rgb(255, 255, 255, .05);
     backdrop-filter: blur(10px);
-   
+    max-width: 100%;
+}
+.nav__bar{
+    margin: 0 300px 0;
 }
 .nav__bar ul{
     display: flex;
@@ -86,7 +90,7 @@ body{
     list-style: none;
     clip-path: var(--clip);
     position: absolute; 
-    right: 65px;
+    right: 300px;
     top: 80px;
     width: max-content;
     background-color: rgba(255, 255, 255, 0.09);
@@ -105,7 +109,7 @@ body{
 /* Inicio main */
 .img__fondo{
     background-image: url(./imgs/background/autocity-seis-marcas.webp);
-    height: 100vh;
+    height: calc(100vh - 10px);
     background-size: cover;
     background-position: fixed;
     background-repeat: no-repeat;
