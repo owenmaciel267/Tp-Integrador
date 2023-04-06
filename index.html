@@ -28,6 +28,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -37,43 +40,46 @@
   <body>
     <header class="header">
       <div class="menu container">
-        <a class="item" href="#">
-          <img class="img__logo" src="./imgs/logo/logo.jpg" alt="Logo" />
-        </a>
+        <!-- <div class="menu__margin"> -->
+          <a class="item" href="#">
+            <img class="img__logo" src="./imgs/logo/logo.jpg" alt="Logo" />
+          </a>
+  
+          <nav class="nav__bar">
+            <ul class="nav__items">
+              <li class="items">
+                <a class="item" href="#">Inicio</a>
+              </li>
+  
+              <li class="items items__sub">
+                <a class="item" href="#"> Autos </a>
+  
+                <ul class="sub__menu">
+                  <li class="sub__items items">
+                    <a class="item" href="#">Autos 0KM</a>
+                  </li>
+  
+                  <li class="sub__items items">
+                    <a class="item" href="#">Autos Usados</a>
+                  </li>
+                </ul>
+              </li>
+  
+              <li class="items">
+                <a class="item" href="#">Nosotros</a>
+              </li>
+  
+              <li class="items">
+                <a class="item" href="#">Contacto</a>
+              </li>
+            </ul>
+          </nav>
+  
+          <a href="#" class="hambur">
+            <img src="./imgs/logo/menu.png" alt="hambur" />
+          </a>
+        <!-- </div> -->
 
-        <nav class="nav__bar">
-          <ul class="nav__items">
-            <li class="items">
-              <a class="item" href="#">Inicio</a>
-            </li>
-
-            <li class="items items__sub">
-              <a class="item" href="#"> Autos </a>
-
-              <ul class="sub__menu">
-                <li class="sub__items items">
-                  <a class="item" href="#">Autos 0KM</a>
-                </li>
-
-                <li class="sub__items items">
-                  <a class="item" href="#">Autos Usados</a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="items">
-              <a class="item" href="#">Nosotros</a>
-            </li>
-
-            <li class="items">
-              <a class="item" href="#">Contacto</a>
-            </li>
-          </ul>
-        </nav>
-
-        <a href="#" class="hambur">
-          <img src="./imgs/logo/menu.png" alt="hambur" />
-        </a>
       </div>
     </header>
 
@@ -96,23 +102,477 @@
             </div> -->
 
             <div class="btns row">
-              <button class="btn-1">
+              <a href="#" class="btn-1">
                 Ver Autos <i class="bi bi-car-front-fill"></i>
-              </button>
-              <button class="btn-2">
+              </a>
+              <a href="#" class="btn-2">
                 Preguntas Frecuentes <i class="bi bi-arrow-right"></i>
-              </button>
+              </a>
             </div>
           </section>
         </div>
       </div>
+
+      <!-- cartas de los autos -->
+      <section class="section__2 container">
+        <div class="row section__2__cartas">
+          <div class="tamaño__carta col">
+            <div class="col_2">
+              <section class="cartas">
+                <div class="cartas__fondo__1">
+                  <div class="cartas__text">
+                    <h2>Autos 0KM</h2>
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque voluptatem eum neque, ratione corporis quas iste explicabo iure facilis id ipsum nemo totam earum non reiciendis? Nulla magnam eius beatae?
+                    </p>
+                    <a href="#" class="btn-1">
+                      Ver
+                    </a>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          
+          <div class="tamaño__carta col">
+            <div class="col_2">
+              <section class="cartas">
+                <div class="cartas__fondo__2">
+                  <div class="cartas__text">
+                    <h2>Autos Usados</h2>
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque voluptatem eum neque, ratione corporis quas iste explicabo iure facilis id ipsum nemo totam earum non reiciendis? Nulla magnam eius beatae?
+                    </p>
+                    <a href="#" class="btn-1">
+                      Ver
+                    </a>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- swiper  AUTOS 0KM  -->
+      <section class="productos">
+            
+        <div class="productos__title">
+          <h1 class="title">
+            Autos 0km
+          </h1>
+        </div>
+
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card__img">
+                      <img src="./imgs/0km/0km-1.jpg">
+                  </div>
+                  <div class="card__contenido">
+                      <h2>Vestido Negro</h2>
+                      <span>Precio: $1.0000.000</span>
+                      <p>
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem a dolor sapiente magnam alias asperiores qui doloribus corporis itaque quia, iusto nihil ratione voluptas repellendus culpa labore quibusdam in vel.
+                       </p>
+                      <a href="#" class="btn-1">Comprar</a>
+                      <a href="#" class="btn-1">Ver</a>
+                    </div>
+                </div>
+              </div>
+              
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card__img">
+                      <img src="./imgs/0km/0km-6.jpg">
+                  </div>
+                  <div class="card__contenido">
+                      <h2>Vestido Negro</h2>
+                      <span>Precio: $1.0000.000</span>
+                      <p>
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem a dolor sapiente magnam alias asperiores qui doloribus corporis itaque quia, iusto nihil ratione voluptas repellendus culpa labore quibusdam in vel.
+                       </p>
+                      <a href="#" class="btn-1">Comprar</a>
+                      <a href="#" class="btn-1">Ver</a>
+                    </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card__img">
+                      <img src="./imgs/0km/0km-2.jpg">
+                  </div>
+                  <div class="card__contenido">
+                      <h2>Vestido Negro</h2>
+                      <span>Precio: $1.0000.000</span>
+                      <p>
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem a dolor sapiente magnam alias asperiores qui doloribus corporis itaque quia, iusto nihil ratione voluptas repellendus culpa labore quibusdam in vel.
+                       </p>
+                      <a href="#" class="btn-1">Comprar</a>
+                      <a href="#" class="btn-1">Ver</a>
+                    </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card__img">
+                      <img src="./imgs/0km/0km-3.jpg">
+                  </div>
+                  <div class="card__contenido">
+                      <h2>Vestido Negro</h2>
+                      <span>Precio: $1.0000.000</span>
+                      <p>
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem a dolor sapiente magnam alias asperiores qui doloribus corporis itaque quia, iusto nihil ratione voluptas repellendus culpa labore quibusdam in vel.
+                       </p>
+                      <a href="#" class="btn-1">Comprar</a>
+                      <a href="#" class="btn-1">Ver</a>
+                    </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card__img">
+                      <img src="./imgs/0km/0km-4.jpg">
+                  </div>
+                  <div class="card__contenido">
+                      <h2>Vestido Negro</h2>
+                      <span>Precio: $1.0000.000</span>
+                      <p>
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem a dolor sapiente magnam alias asperiores qui doloribus corporis itaque quia, iusto nihil ratione voluptas repellendus culpa labore quibusdam in vel.
+                       </p>
+                      <a href="#" class="btn-1">Comprar</a>
+                      <a href="#" class="btn-1">Ver</a>
+                    </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card__img">
+                      <img src="./imgs/0km/0km-5.jpg">
+                  </div>
+                  <div class="card__contenido">
+                      <h2>Vestido Negro</h2>
+                      <span>Precio: $1.0000.000</span>
+                      <p>
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem a dolor sapiente magnam alias asperiores qui doloribus corporis itaque quia, iusto nihil ratione voluptas repellendus culpa labore quibusdam in vel.
+                       </p>
+                      <a href="#" class="btn-1">Comprar</a>
+                      <a href="#" class="btn-1">Ver</a>
+                    </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev prev-mujer"></div>
+            <div class="swiper-button-next next-mujer"></div>
+        
+
+        </div>
+        
+        <!-- btn de ver mas -->
+        <article class="accordion">
+
+            <label class="accordion__link">
+                <i>Ver mas</i>   
+                <input type="checkbox">
+            </label>
+
+
+
+            <div class="accordion__item">
+
+                <div class="items">
+
+                  <div class="card">
+                    <div class="card__img">
+                        <img src="./imgs/0km/0km-1.jpg">
+                    </div>
+                    <div class="card__contenido">
+                        <h2>Vestido Negro</h2>
+                        <span>Precio: $1.0000.000</span>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem a dolor sapiente magnam alias asperiores qui doloribus corporis itaque quia, iusto nihil ratione voluptas repellendus culpa labore quibusdam in vel.
+                         </p>
+                        <a href="#" class="btn-1">Comprar</a>
+                        <a href="#" class="btn-1">Ver</a>
+                      </div>
+                  </div>
+
+                </div>
+
+            </div>
+
+        </article>
+        
+        
+        
+       
+    </section>
+
+
+    <!-- Swiper  AUTOS USADOS -->
+    <section class="productos">
+            
+      <div class="productos__title">
+        <h1 class="title">
+          Autos 0km
+        </h1>
+      </div>
+
+      <!-- Slider main container -->
+      <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+              <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card__img">
+                    <img src="./imgs/mas-vendidos/usado-1.jpg">
+                </div>
+                <div class="card__contenido">
+                    <h2>Vestido Negro</h2>
+                    <span>Precio: $1.0000.000</span>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem a dolor sapiente magnam alias asperiores qui doloribus corporis itaque quia, iusto nihil ratione voluptas repellendus culpa labore quibusdam in vel.
+                     </p>
+                    <a href="#" class="btn-1">Comprar</a>
+                    <a href="#" class="btn-1">Ver</a>
+                  </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card__img">
+                    <img src="./imgs/mas-vendidos/usado-2.jpg">
+                </div>
+                <div class="card__contenido">
+                    <h2>Vestido Negro</h2>
+                    <span>Precio: $1.0000.000</span>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem a dolor sapiente magnam alias asperiores qui doloribus corporis itaque quia, iusto nihil ratione voluptas repellendus culpa labore quibusdam in vel.
+                     </p>
+                    <a href="#" class="btn-1">Comprar</a>
+                    <a href="#" class="btn-1">Ver</a>
+                  </div>
+              </div>
+            </div>
+
+            
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card__img">
+                    <img src="./imgs/mas-vendidos/usado-3.jpg">
+                </div>
+                <div class="card__contenido">
+                    <h2>Vestido Negro</h2>
+                    <span>Precio: $1.0000.000</span>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem a dolor sapiente magnam alias asperiores qui doloribus corporis itaque quia, iusto nihil ratione voluptas repellendus culpa labore quibusdam in vel.
+                     </p>
+                    <a href="#" class="btn-1">Comprar</a>
+                    <a href="#" class="btn-1">Ver</a>
+                  </div>
+              </div>
+            </div>
+
+            
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card__img">
+                    <img src="./imgs/mas-vendidos/usado-4.jpg">
+                </div>
+                <div class="card__contenido">
+                    <h2>Vestido Negro</h2>
+                    <span>Precio: $1.0000.000</span>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem a dolor sapiente magnam alias asperiores qui doloribus corporis itaque quia, iusto nihil ratione voluptas repellendus culpa labore quibusdam in vel.
+                     </p>
+                    <a href="#" class="btn-1">Comprar</a>
+                    <a href="#" class="btn-1">Ver</a>
+                  </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card__img">
+                    <img src="./imgs/mas-vendidos/usado-5.jpg">
+                </div>
+                <div class="card__contenido">
+                    <h2>Vestido Negro</h2>
+                    <span>Precio: $1.0000.000</span>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem a dolor sapiente magnam alias asperiores qui doloribus corporis itaque quia, iusto nihil ratione voluptas repellendus culpa labore quibusdam in vel.
+                     </p>
+                    <a href="#" class="btn-1">Comprar</a>
+                    <a href="#" class="btn-1">Ver</a>
+                  </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card__img">
+                    <img src="./imgs/mas-vendidos/usado-6.jpg">
+                </div>
+                <div class="card__contenido">
+                    <h2>Vestido Negro</h2>
+                    <span>Precio: $1.0000.000</span>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem a dolor sapiente magnam alias asperiores qui doloribus corporis itaque quia, iusto nihil ratione voluptas repellendus culpa labore quibusdam in vel.
+                     </p>
+                    <a href="#" class="btn-1">Comprar</a>
+                    <a href="#" class="btn-1">Ver</a>
+                  </div>
+              </div>
+            </div>
+
+
+
+          </div>
+
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+      
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+      
+
+      </div>
+      
+      <!-- btn de ver mas -->
+      <article class="accordion">
+
+          <label class="accordion__link">
+              <i>Ver mas</i>   
+              <input type="checkbox">
+          </label>
+
+
+
+          <div class="accordion__item">
+
+              <div class="items">
+
+                <div class="card">
+                  <div class="card__img">
+                      <img src="./imgs/mas-vendidos/usado-1.jpg">
+                  </div>
+                  <div class="card__contenido">
+                      <h2>Vestido Negro</h2>
+                      <span>Precio: $1.0000.000</span>
+                      <p>
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem a dolor sapiente magnam alias asperiores qui doloribus corporis itaque quia, iusto nihil ratione voluptas repellendus culpa labore quibusdam in vel.
+                       </p>
+                      <a href="#" class="btn-1">Comprar</a>
+                      <a href="#" class="btn-1">Ver</a>
+                    </div>
+                </div>
+                <div class="card">
+                  <div class="card__img">
+                      <img src="./imgs/mas-vendidos/usado-1.jpg">
+                  </div>
+                  <div class="card__contenido">
+                      <h2>Vestido Negro</h2>
+                      <span>Precio: $1.0000.000</span>
+                      <p>
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem a dolor sapiente magnam alias asperiores qui doloribus corporis itaque quia, iusto nihil ratione voluptas repellendus culpa labore quibusdam in vel.
+                       </p>
+                      <a href="#" class="btn-1">Comprar</a>
+                      <a href="#" class="btn-1">Ver</a>
+                    </div>
+                </div>
+                <div class="card">
+                  <div class="card__img">
+                      <img src="./imgs/mas-vendidos/usado-1.jpg">
+                  </div>
+                  <div class="card__contenido">
+                      <h2>Vestido Negro</h2>
+                      <span>Precio: $1.0000.000</span>
+                      <p>
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem a dolor sapiente magnam alias asperiores qui doloribus corporis itaque quia, iusto nihil ratione voluptas repellendus culpa labore quibusdam in vel.
+                       </p>
+                      <a href="#" class="btn-1">Comprar</a>
+                      <a href="#" class="btn-1">Ver</a>
+                    </div>
+                </div>
+                <div class="card">
+                  <div class="card__img">
+                      <img src="./imgs/mas-vendidos/usado-1.jpg">
+                  </div>
+                  <div class="card__contenido">
+                      <h2>Vestido Negro</h2>
+                      <span>Precio: $1.0000.000</span>
+                      <p>
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem a dolor sapiente magnam alias asperiores qui doloribus corporis itaque quia, iusto nihil ratione voluptas repellendus culpa labore quibusdam in vel.
+                       </p>
+                      <a href="#" class="btn-1">Comprar</a>
+                      <a href="#" class="btn-1">Ver</a>
+                    </div>
+                </div>
+                <div class="card">
+                  <div class="card__img">
+                      <img src="./imgs/mas-vendidos/usado-1.jpg">
+                  </div>
+                  <div class="card__contenido">
+                      <h2>Vestido Negro</h2>
+                      <span>Precio: $1.0000.000</span>
+                      <p>
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem a dolor sapiente magnam alias asperiores qui doloribus corporis itaque quia, iusto nihil ratione voluptas repellendus culpa labore quibusdam in vel.
+                       </p>
+                      <a href="#" class="btn-1">Comprar</a>
+                      <a href="#" class="btn-1">Ver</a>
+                    </div>
+                </div>
+                <div class="card">
+                  <div class="card__img">
+                      <img src="./imgs/mas-vendidos/usado-1.jpg">
+                  </div>
+                  <div class="card__contenido">
+                      <h2>Vestido Negro</h2>
+                      <span>Precio: $1.0000.000</span>
+                      <p>
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem a dolor sapiente magnam alias asperiores qui doloribus corporis itaque quia, iusto nihil ratione voluptas repellendus culpa labore quibusdam in vel.
+                       </p>
+                      <a href="#" class="btn-1">Comprar</a>
+                      <a href="#" class="btn-1">Ver</a>
+                    </div>
+                </div>
+
+
+              </div>
+
+          </div>
+
+      </article>
+      
+          
+  </section>
     </main>
 
     <!-- __________________________ -->
     <!-- javascript -->
     <script src="script.js"></script>
 
-    <!-- Swiper js -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  </body>
+   
+
+</body>
 </html>
