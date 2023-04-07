@@ -1,5 +1,15 @@
+// CAMBIANDO EL MENU CUANDO HAGO SCROLL
 
-
+window.addEventListener('scroll', function() {
+    const menu = document.getElementById('menu');
+    const scrollPosition = window.scrollY;
+    
+    if (scrollPosition > 100) {
+      menu.classList.add('scrolled');
+    } else {
+      menu.classList.remove('scrolled');
+    }
+  });
 
 
 

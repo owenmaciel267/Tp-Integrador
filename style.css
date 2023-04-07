@@ -46,7 +46,7 @@ body{
 .img__logo{
     width: 150px;
     height: 80px;
-    /* margin: 0 300px 0; */
+    border-radius: 0px 0px 0px 15px;
 }
 .menu{
     position: fixed;
@@ -60,14 +60,17 @@ body{
     background-color: var(--bg--transparente);
     backdrop-filter: var(--bg-filter);
     z-index: 1000;
-    /* max-width: 100%; */
 }
-/* .menu__margin{
-    /* display: flex; 
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
-} */
+
+/* CAMBIANDO EL MENU CUADNO HAGO SCROLL */
+.menu.scrolled {
+    background-color: #86b8d0;
+    color: #f6f6f6;
+    border-radius: 0 0 15px 15px;
+    transition: all .7s ease-in-out;
+
+}
+
 
 
 .nav__bar ul{
