@@ -133,7 +133,7 @@ body{
 
 /* Inicio main */
 .img__fondo{
-    background-image: url(./imgs/background/autocity-seis-marcas.webp);
+    background-image: url("../imgs/background/autocity-seis-marcas.webp");
     height: calc(100vh - 10px);
     background-size: cover;
     background-position: bottom;
@@ -207,12 +207,12 @@ body{
 
 }
 .cartas__fondo__1{
-    background-image: url("./imgs/background/0km.webp");
+    background-image: url("../imgs/background/auto-usado.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 .cartas__fondo__2{
-    background-image: url("./imgs/background/auto-usado.jpg");
+    background-image: url("../imgs/background/auto-usado.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -396,7 +396,7 @@ input{
   
 .sobre__text{
     position: relative;
-    background-image: url(./imgs/background/sobre.jpg);
+    background-image: url("../imgs/background/sobre.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     object-fit: cover;
@@ -462,7 +462,6 @@ input{
     top: 0%;
     bottom: 0%;
     left: 0%;
-    background-image: url(../logo/tiendaonlinesitioexpress.jpg);
     margin: 0px 0;
     border-radius: 20px;
 }
