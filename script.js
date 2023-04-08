@@ -2,14 +2,17 @@
 
 window.addEventListener('scroll', function() {
     const menu = document.getElementById('menu');
+    const submenu = document.getElementById("submenu")
     const scrollPosition = window.scrollY;
+
     
     if (scrollPosition > 100) {
       menu.classList.add('scrolled');
     } else {
       menu.classList.remove('scrolled');
     }
-  });
+
+})
 
 
 

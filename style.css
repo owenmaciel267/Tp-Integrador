@@ -12,7 +12,7 @@
     --bg--transparente: rgb(255, 255, 255, .05);
     --bg-filter: blur(10px);
 
-    --card-width: 380px;
+    --card-width: 320px;
     --card-heigth: 580px;
 
     --bordes--card: 25px;
@@ -72,7 +72,6 @@ body{
 }
 
 
-
 .nav__bar ul{
     display: flex;
 }
@@ -109,7 +108,8 @@ body{
     grid-row-gap: 0px;
 
     /* width: 0px; */
-    padding: 16px;
+    border-radius: 10px;
+    padding: 10px;
     transition: .5s;
     list-style: none;
     clip-path: var(--clip);
@@ -117,8 +117,9 @@ body{
     right: 100px;
     top: 80px;
     width: max-content;
-    background-color: var(--bg--transparente);
+    background-color: rgba(21, 20, 20, 0.633);
     backdrop-filter: var(--bg-filter);
+    z-index: 1000;
 }
 
 .hambur{
@@ -199,14 +200,14 @@ body{
 .cartas__fondo__2{
     display: flex;
     align-items: end;
-    height: 500px;
+    height: 550px;
     text-align: center;
     border-radius: 25px 25px;
     margin: 20px;
 
 }
 .cartas__fondo__1{
-    background-image: url("./imgs/background/auto-0km.jpg");
+    background-image: url("./imgs/background/0km.webp");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -274,7 +275,7 @@ body{
 }
 
 .card__contenido{
-    text-align: start;
+    text-align: center;
 }
 .card__contenido h2{
     text-align: center;
@@ -297,6 +298,7 @@ body{
     width: 260px;
     padding: 10px;
     font-weight: 100;
+    margin: auto;
 }
 
 .card__contenido .btn-1{
