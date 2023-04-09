@@ -1,0 +1,235 @@
+:root{
+    --bg-header-color: 3E606F;
+    --bg-footer-color: 193441;
+    --bg-body-color:  FFFFFF;
+    
+    --bg-cards-color: A4CADC;
+    --btn-colors: linear-gradient(#86b8d0,#4995b9);
+
+    --padding-titulos-grandes: 20px 20px 20px 20px;
+    --margin-titulos-grandes: 35px 30px 30px 0px;
+
+    --bg--transparente: rgb(255, 255, 255, .05);
+    --bg-filter: blur(10px);
+
+    --card-width: 320px;
+    --card-heigth: 580px;
+
+    --bordes--card: 25px;
+    --border--card-img: 25px 25px 0 0;
+
+    
+    --tamaño-letra-primaria: 28px;
+    --tamaño-letra-secundaria: 20px;
+    --tamaño-letra-terciaria: 14px;
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+    /* outline: 1px solid red; */
+}
+
+
+body{
+    background-color: #86b8d0;
+    color: #f0faf1;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+
+/* Menu */
+.img__logo{
+    width: 150px;
+    height: 80px;
+    border-radius: 0px 0px 0px 15px;
+}
+.menu{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0px;
+    left: 0%;
+    right: 0%;
+    padding: 0%;
+    background-color: var(--bg--transparente);
+    backdrop-filter: var(--bg-filter);
+    z-index: 1000;
+}
+
+/* CAMBIANDO EL MENU CUADNO HAGO SCROLL */
+.menu.scrolled {
+    background-color: #86b8d0;
+    color: #f6f6f6;
+    border-radius: 0 0 15px 15px;
+    transition: all .7s ease-in-out;
+
+}
+
+
+.nav__bar ul{
+    display: flex;
+}
+
+.nav__items{
+    align-items: center;
+    justify-content: center;
+}
+.nav__items li a{
+    padding: 10px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    margin: 10px;    
+}
+.items{
+    width: auto;
+    --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+.items:hover{
+    --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+
+
+.items__sub{
+    display: flex;
+}
+.sub__menu{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    border-radius: 10px;
+    padding: 10px;
+    transition: .5s;
+    list-style: none;
+    clip-path: var(--clip);
+    position: absolute; 
+    right: 100px;
+    top: 80px;
+    width: max-content;
+    background-color: rgba(21, 20, 20, 0.633);
+    backdrop-filter: var(--bg-filter);
+    z-index: 1000;
+}
+
+.hambur{
+    display: none;
+}
+.hambur img{
+    width: 40px;
+    height: 30px;
+}
+
+/* formulario de contacto */
+
+
+.formulario{
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    height:500px;
+    width: 500px;
+    margin: auto;
+    display: flex;
+
+}
+form{
+    /* display: flex; */
+    position: relative;
+    top: 100px;
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 400px;
+    margin: 50px 0;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.input-form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+h2{
+    color: #283629;
+    font-size: 35px;
+}
+
+label{
+    color: #283629;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+input, textarea{
+    padding: 12px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: #edfff0;
+    border: 2px solid  #f0faf1;
+    color: #283629;
+
+    outline: none;
+}
+input::placeholder, textarea::placeholder{
+    color: #b5cab6;
+}
+
+.form-text{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+.form-text a{
+    color: rgb(255, 250, 250);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn{
+    font-size: 16px;
+    color: #000000;
+    border: 0;
+    border-radius: #51d94c;
+    box-shadow: 0 0 20px white;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #86b8d0;
+    color: white;
+}
+
+
+@media(max-width:991px){
+    body{
+        padding: 30px;
+    }
+    form{
+        padding: 50px 30px;
+        width: 100%;
+    }
+    input{
+        padding: 15px;
+    }
+}

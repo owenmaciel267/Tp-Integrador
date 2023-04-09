@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SPEEDEALERS</title>
+    <!-- css -->
+    <link rel="stylesheet" href="contac.css" />
+    <!-- mi css -->
+    <!-- <link rel="stylesheet" href="../styles/style.css"> -->
+  </head>
+  <body>
+    <header class="header">
+        <div class="menu container" id="menu">
+          <!-- <div class="menu__margin"> -->
+            <a class="item" href="#">
+              <img class="img__logo" src="../imgs/logo/logo.jpg" alt="Logo" />
+            </a>
+    
+            <nav class="nav__bar">
+              <ul class="nav__items">
+                <li class="items">
+                  <a class="item" href="../index.html">Inicio</a>
+                </li>
+    
+                <li class="items items__sub" id="submenu">
+                  <a class="item" href="../index.html#autos"> Autos </a>
+    
+                  <ul class="sub__menu" id="submenu">
+                    <li class="sub__items items">
+                      <a class="item" href="../index.html#autos0KM">Autos 0KM</a>
+                    </li>
+    
+                    <li class="sub__items items">
+                      <a class="item" href="../index.html#autosUsados">Autos Usados</a>
+                    </li>
+                  </ul>
+                </li>
+    
+                <li class="items">
+                  <a class="item" href="../index.html#nosotros">Nosotros</a>
+                </li>
+    
+                <li class="items">
+                  <a class="item" href="#">Contacto</a>
+                </li>
+              </ul>
+            </nav>
+    
+            <a href="#" class="hambur">
+              <img src="./imgs/logo/menu.png" alt="hambur" />
+            </a>
+          <!-- </div> -->
+  
+        </div>
+    </header>
+    <main>
+      <div class="fomulario">
+        <form action="https://formsubmit.co/dndev267@gmail.com" method="POST">
+          <h2>Contacto</h2>
+          <div class="input-form">
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name" placeholder="Nombre" />
+
+            <label for="phone"> Telefono</label>
+            <input type="tel" name="phone" id="phone" placeholder="Telefono" />
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email" />
+
+            <label for="menssage"> mensaje </label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="5"
+              placeholder="Mensaje"
+            ></textarea>
+
+            <div class="form-text">
+              <a href="#">Politica de privacidad</a>
+              <a href="#">Terminos y Condiciones</a>
+            </div>
+
+            <input type="submit" value="Enviar" class="btn" />
+
+            <!-- Esto lo que hace es dejarnos en nuestra pagina -->
+            <input
+              type="hidden"
+              name="_next"
+              value="http://127.0.0.1:5500/contacto/contac.html"
+            />
+            <input type="hidden" name="_captcha" value="false" />
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <!-- script -->
+    <script src="contac.js"></script>
+    <!-- main script -->
+    <script src="../script/script.js"></script>
+  </body>
+</html>
