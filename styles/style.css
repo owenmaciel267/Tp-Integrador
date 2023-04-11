@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&family=Roboto&display=swap');
 :root{
     --bg-header-color: 3E606F;
     --bg-footer-color: 193441;
@@ -32,11 +33,16 @@
     text-decoration: none;
     /* outline: 1px solid red; */
 }
+
 body{
     background-color: black;
     color: aliceblue;
     position: relative;
-    font-family:  sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+h1,h2,h3,h4,h5{
+    font-family: 'Roboto', sans-serif;
 }
 .container{
     max-width: 1200px;
@@ -161,6 +167,8 @@ body{
     font-size: 50px;
     line-height: 70px;
     font-weight: 700;
+    text-shadow: 10px 10px 10px  black;
+
 }
 .inicio__txt p{
     padding: var(--padding-titulos-grandes);
@@ -168,6 +176,7 @@ body{
     font-weight: 500;
     font-size: 20px;
     font-family: sans-serif;
+    text-shadow: 3px 2px 5px  black;
 }
 
 .btns{
@@ -250,12 +259,15 @@ body{
 
 }
 
-.productos__title h1{
-    margin: auto;
-    padding: 0px 40px  10px;
-    font-size: 32px;
+.productos__title .title{
+    font-size: 40px;
+    padding: 0px 40px 20px;
     font-weight: 400;
+    margin: 20px auto;
 
+}
+.productos__title .title-2{
+    font-size: 40px;
 }
 
 
@@ -274,7 +286,7 @@ body{
     height: auto;
     background-color: #f6f6f6;
     border-radius: 25px;
-    margin: auto;
+    margin: 20px auto;
 }
 .card__img{
     width: 100%;
@@ -602,7 +614,7 @@ input{
         left: 0%;
         width: 100%;
         /* background-color: #0e9cdd; */
-        background: #0e9bddb2;
+        background: #000c11d7;
         align-items: start;
         justify-content: start;
         z-index: 1000;
@@ -611,6 +623,14 @@ input{
         display: flex;
     }
 
+    .sub__menu{
+        flex-direction: column;
+        top: 70px;
+        right: 5px;
+        padding: 10px;
+        margin: 10px;
+        background: var(--btn-colors);
+    }
 
     /* Inicio */
     .inicio__txt h1{
