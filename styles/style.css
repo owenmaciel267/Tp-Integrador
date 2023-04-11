@@ -3,8 +3,8 @@
     --bg-footer-color: 193441;
     --bg-body-color:  FFFFFF;
     
-    --bg-cards-color: A4CADC;
-    --btn-colors: linear-gradient(#86b8d0,#4995b9);
+    --bg-cards-color: #A4CADC;
+    --btn-colors: linear-gradient(#d7e1e6,#0e9cdd);
 
     --padding-titulos-grandes: 20px 20px 20px 20px;
     --margin-titulos-grandes: 35px 30px 30px 0px;
@@ -65,7 +65,7 @@ body{
 
 /* CAMBIANDO EL MENU CUADNO HAGO SCROLL */
 .menu.scrolled {
-    background-color: #86b8d0;
+    background: linear-gradient(#72a5be,#0e9cdd);
     color: #f6f6f6;
     border-radius: 0 0 15px 15px;
     transition: all .7s ease-in-out;
@@ -88,6 +88,14 @@ body{
     text-decoration: none;
     margin: 10px;    
 }
+.item:hover{
+    background: var(--btn-colors);
+    width: 100px;
+    padding: 16px;
+    border-radius: 15px;
+}
+
+
 .items{
     width: auto;
     --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
@@ -180,11 +188,15 @@ body{
     margin: 50px 20px;
     border-radius: 30px;
     text-decoration: none;
-    background-color: white;
+    background-color: #ffffff;
     text-align: center;
-    color: black;
+    color: rgb(0, 0, 0);
 }
-
+.btn-1:hover , .btn-2:hover{
+    outline: 3px solid #72a5be;
+    background-color: transparent;
+    color: white;
+}
 
 /* Cartas de autos */
 
@@ -249,6 +261,7 @@ body{
 
 .swiper-wrapper{
     display: flex;
+    margin-bottom: 25px;
 }
 
 
@@ -301,21 +314,21 @@ body{
     margin: auto;
 }
 
-.card__contenido .btn-1{
+.card__contenido .btn-card{
     display: inline-block;
     width: 150px;
     padding: 10px 12px;
     margin: 10px 10px;
     border-radius: 30px;
     text-decoration: none;
-    background-color: white;
     text-align: center;
-    color: black;
+    color: white;
+    background: var(--btn-colors);
 }
 
-.btn-1:hover{
+.btn-card:hover{
     background-color: transparent;
-    outline: 3px solid white;
+    background: linear-gradient(#26cfcf, #a3cccc);
     color: white;
 }
 
@@ -495,7 +508,11 @@ input{
     height: 100px;
     margin: 20px;
 }
-.logo__footer h1{
+.logo__footer a{
+    text-decoration: none;
+    color: white;
+}
+.logo__footer a h1{
     font-size: 32px;
     margin: 20px;
     color: var(--color-btn1);
@@ -540,4 +557,129 @@ input{
 
 .footer__adelante p{
     text-align: center;
+}
+
+
+
+
+/* mobile */
+@media only screen and (max-width:991px){
+    /* menu */
+    /* *{
+        /* outline: 1px solid red ; */
+    
+    .header{
+        position: relative;
+        width: 100%;
+    }
+    
+    .hambur{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto 20px;
+        /* background-color: #0e9cdd; */
+    }
+    .menu{
+        position: absolute;
+        width: 100%;
+        right: 0%;
+        /* left: -400px;     */
+        align-items: end;   
+        /* background-color: #0e9cdd;   */
+    }
+    .img__logo{
+        width: 110px;
+        height: 70px;
+    }
+    .nav__bar{
+        display: none;
+    }
+    .nav__items{
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0%;
+        width: 100%;
+        /* background-color: #0e9cdd; */
+        background: #0e9bddb2;
+        align-items: start;
+        justify-content: start;
+        z-index: 1000;
+    }
+    .nav__bar.active{
+        display: flex;
+    }
+
+
+    /* Inicio */
+    .inicio__txt h1{
+        padding: 0%;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+    .inicio__txt p{
+        margin: 15px;
+        padding: 0%;
+    }
+    .btns{
+        flex-direction: column;
+        margin: 0%;
+    }
+    .btns a{
+        margin: 20px;
+    }
+
+    /* cartas de los autos que vendemos  */
+    .cartas__text h2, 
+    .cartas__text p, 
+    .cartas__text a{
+        margin: 20px;
+    }
+
+    /* Sobre nosotros */
+    .detalles__sobre h2{
+        font-size: 50px;
+    }
+    .detalles__text{
+        padding: 0%;
+        width: 300px;
+        margin: auto;
+    }
+    .detalles__text p{
+        width: 100%;
+        padding: 0%;
+    }
+    .detalles__btn{
+        margin: auto;
+        padding: 10px;
+    }
+    .detalles__btn a{
+        margin: auto;
+    }
+
+    /* footer */
+    .footer__adelante{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo__footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer__nav{
+        flex-direction: column;
+    }
+    .footer__list .list{
+        margin: auto;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    .list h3{
+        display: block;
+    }
+
 }
