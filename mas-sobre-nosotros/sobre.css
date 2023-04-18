@@ -98,3 +98,122 @@ body{
     width: auto;
     height: auto;
 }
+
+
+/* Cartas */
+.experiencias{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+
+}
+.cartas{
+    width: var(--card-width);
+    height: auto;
+
+    margin: auto;
+}
+.cartas i{
+    font-size: 32px;
+    color: #86b8d0;
+}
+
+
+/* Modo mobile */
+@media (max-width:991px){
+
+    .header{
+        position: relative;
+        width: 100%;
+    }
+    
+    .hambur{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto 20px;
+    }
+    .menu{
+        position: absolute;
+        width: 100%;
+        right: 0%;
+        align-items: end;   
+    }
+    .img__logo{
+        width: 110px;
+        height: 70px;
+    }
+    .nav__bar{
+        display: none;
+
+    }
+    .nav__items{
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0%;
+        width: 100%;
+        background: #000c11d7;
+        align-items: start;
+        justify-content: start;
+        z-index: 2000;
+    }
+    .nav__bar.activee{
+        display: flex !important;
+
+        z-index: 2000;
+    }
+
+    .sub__menu{
+        flex-direction: column;
+        top: 70px;
+        right: 5px;
+        padding: 10px;
+        margin: 10px;
+        background: var(--btn-colors);
+    }
+
+
+
+    /* Inicio */
+    .inicio{
+        margin-bottom: 60px;
+    }
+    .inicio__info{
+        margin-bottom: 20px;
+    }
+    .inicio__info h1{
+        margin: 0%;
+        padding-top: 0%;
+    }
+    .info{
+        width: 90%;
+        margin: 0px 0px 20px;
+        padding: 0%;
+    }
+    .info p{
+        margin: 0px 10px 0px;
+        padding-top: 0%;
+        width: 100%;
+    }
+
+    .experiencias_laboral{
+        margin-top: 40px;
+        height: 100%;
+        padding: 20px;
+    }
+
+    .info-2{
+        margin: 20px auto;
+    }
+
+    .info-2 p{
+        margin: 0%;
+        padding: 0%;
+    }
+    .img__experiencia img{
+        display: none;
+    }
+
+}

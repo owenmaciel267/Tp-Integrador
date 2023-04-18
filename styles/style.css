@@ -51,7 +51,7 @@ h1,h2,h3,h4,h5{
 
 /* Menu */
 .img__logo{
-    width: 150px;
+    width: 90px;
     height: 80px;
     border-radius: 0px 0px 0px 15px;
 }
@@ -613,7 +613,6 @@ input{
         top: 70px;
         left: 0%;
         width: 100%;
-        /* background-color: #0e9cdd; */
         background: #000c11d7;
         align-items: start;
         justify-content: start;
