@@ -318,8 +318,8 @@ h1,h2,h3,h4,h5{
     font-size: var(--tamaño-letra-secundaria);
 }
 
-.card__contenido p{
-    font-size: var(--tamaño-letra-terciaria);
+.card__contenido ul{
+    font-size: 18px;
     width: 260px;
     padding: 10px;
     font-weight: 100;
