@@ -71,17 +71,17 @@ const swiper = new Swiper('.swiper', {
 
 // Animacion 
 
-new TypeIt("#element", {
-  speed: 50,
-  startDelay: 900,
-  loop:true,
-  loopDelay: null
-})
-  .type("Speedealers", { delay: 1000 })
-  .pause(5000)
+// new TypeIt("#element", {
+//   speed: 50,
+//   startDelay: 900,
+//   loop:true,
+//   loopDelay: null
+// })
+//   .type("Speedealers", { delay: 1000 })
+//   .pause(5000)
 
-  .delete("Speedealers", {delay: 1000})
-  .pause(3000)
-  .type("En este lugar encontras lo mejor!!!",{delay: 100})
+//   .delete("Speedealers", {delay: 1000})
+//   .pause(3000)
+//   .type("En este lugar encontras lo mejor!!!",{delay: 100})
 
-  .go();
+//   .go();
