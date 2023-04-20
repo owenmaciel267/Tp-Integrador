@@ -65,26 +65,26 @@ form.addEventListener('submit', (e) => { // Agrega un evento al enviar el formul
 });
 
 
-// // Agregar un evento submit al formulario
-// form.addEventListener('submit', function(event) {
-//     event.preventDefault(); // Evita que se recargue la página al enviar el formulario
+// Agregar un evento submit al formulario
+form.addEventListener('submit', function(event) {
+    event.preventDefault(); // Evita que se recargue la página al enviar el formulario
   
-//     // Obtener los valores de los campos del formulario
-//     const nombre = document.querySelector('#name').value;
-//     const telefono = document.querySelector('#phone').value;
-//     const email = document.querySelector('#email').value;
-//     const mensaje = document.querySelector('#message').value;
+    // Obtener los valores de los campos del formulario
+    const nombre = document.querySelector('#name').value;
+    const telefono = document.querySelector('#phone').value;
+    const email = document.querySelector('#email').value;
+    const mensaje = document.querySelector('#message').value;
   
-//     // Crear un objeto con arrays
-//     const datosFormulario = {
-//       nombre: [nombre],
-//       telefono: [telefono],
-//       email: [email],
-//       mensaje: [mensaje]
-//     };
+    // Crear un objeto con arrays
+    const datosFormulario = {
+      nombre: [nombre],
+      telefono: [telefono],
+      email: [email],
+      mensaje: [mensaje]
+    };
   
-//     // Mostrar los datos por consola
-//     console.log(datosFormulario);
-//   });
+    // Mostrar los datos por consola
+    console.log(datosFormulario);
+  });
   
 
