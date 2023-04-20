@@ -619,7 +619,11 @@ input{
         background: #011822d7;
         align-items: start;
         justify-content: start;
+        border-radius: 20px;
         z-index: 1000;
+    }
+    .items{
+        margin: 20px;
     }
     .nav__bar.active{
         display: flex;

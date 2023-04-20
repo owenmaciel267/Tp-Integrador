@@ -374,6 +374,7 @@ h1,h2,h3,h4,h5{
             width: 100%;
             height: auto;
             background: #011822d7;
+            border-radius: 20px;
             align-items: start;
             justify-content: start;
             z-index: 1000;
@@ -383,8 +384,8 @@ h1,h2,h3,h4,h5{
         }
         
         .items{
-            padding: 1rem;
-            margin: 1rem;
+            padding: 20px;
+            margin: 20px;
         }
         .sub__menu{
             flex-direction: column;
