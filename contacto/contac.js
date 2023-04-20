@@ -42,23 +42,8 @@ form.addEventListener('submit', (e) => { // Agrega un evento al enviar el formul
   if (errors.length > 0) { // Si hay errores
     alert(errors.join('\n')); // Muestra los mensajes de error
   } else { // Si no hay errores
-  
+   form.submit(); // Envía el formulario
 
-
-
-    // Object
-
-  
-    // Crear un objeto con arrays
-    const datosFormulario = {
-      nombre: [nameInput.value],
-      telefono: [phoneInput.value],
-      email: [emailInput.value],
-      mensaje: [messageInput.value]
-    };
-  
-    // Mostrar los datos por consola
-    console.log(datosFormulario);
 
 
 
@@ -74,6 +59,7 @@ form.addEventListener('submit', (e) => { // Agrega un evento al enviar el formul
   pdf.save('formulario.pdf'); // Descarga el PDF con el nombre "formulario.pdf"
   
   form.submit(); // Envía el formulario
+ 
 }
 
 });
