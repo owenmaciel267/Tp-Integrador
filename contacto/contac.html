@@ -9,8 +9,10 @@
      <!-- favicon -->
      <link rel="shortcut icon" href="../imgs/logo/Auto Logo B.png" type="image/x-icon">
 
-    <!-- mi css -->
-    <!-- <link rel="stylesheet" href="../styles/style.css"> -->
+      <!-- Enlaza la biblioteca jsPDF -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+
+
     <!-- css -->
     <link rel="stylesheet" href="contac.css" />
   </head>
@@ -66,14 +68,14 @@
           <div class="input-form">
             <label for="name">Nombre</label>
             <input type="text" name="name" id="name" placeholder="Nombre" />
-
+            
             <label for="phone"> Telefono</label>
-            <input type="tel" name="phone" id="phone" placeholder="Telefono" />
+            <input type="tel" name="phone"id="phone" placeholder="Telefono" />
 
             <label for="email">Email</label>
             <input type="email" name="email" id="email" placeholder="Email" />
 
-            <label for="menssage"> mensaje </label>
+            <label for="menssage" id="mensage"> mensaje </label>
             <textarea
               name="message"
               id="message"
@@ -83,11 +85,13 @@
             ></textarea>
 
             <div class="form-text">
+              <input type="radio" id="politica">
               <a href="#">Politica de privacidad</a>
+              <input type="radio" id="terminos">
               <a href="#">Terminos y Condiciones</a>
             </div>
 
-            <input type="submit" value="Enviar" class="btn" />
+            <input type="submit" value="Enviar" class="btn" id="elenvioja" />
 
             <!-- Esto lo que hace es dejarnos en nuestra pagina -->
             <input
