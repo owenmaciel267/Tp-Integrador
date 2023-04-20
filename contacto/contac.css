@@ -251,7 +251,7 @@ input::placeholder, textarea::placeholder{
     top: 0%;
     bottom: 0%;
     left: 0%;
-    background-color: rgb(68, 97, 110);
+    background-color: #72a5be;
     box-shadow: 5px 20px 20px rgba(0, 0, 0, 0.274);
     border-radius: 20px;
 }
