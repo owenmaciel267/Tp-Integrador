@@ -46,18 +46,15 @@ form.addEventListener('submit', (e) => { // Agrega un evento al enviar el formul
 
 
 
-// Object
- const nombre = document.querySelector('#name').value;
-    const telefono = document.querySelector('#phone').value;
-    const email = document.querySelector('#email').value;
-    const mensaje = document.querySelector('#message').value;
+    // Object
+
   
     // Crear un objeto con arrays
     const datosFormulario = {
-      nombre: [nombre],
-      telefono: [telefono],
-      email: [email],
-      mensaje: [mensaje]
+      nombre: [nameInput.value],
+      telefono: [phoneInput.value],
+      email: [emailInput.value],
+      mensaje: [messageInput.value]
     };
   
     // Mostrar los datos por consola
