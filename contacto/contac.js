@@ -14,35 +14,35 @@ const phoneInput = document.querySelector('#phone'); // Selecciona el campo de t
 const emailInput = document.querySelector('#email'); // Selecciona el campo de correo electrónico
 const messageInput = document.querySelector('#message'); // Selecciona el campo de mensaje
 
-form.addEventListener('submit', (e) => { // Agrega un evento al enviar el formulario
-  e.preventDefault(); // Evita que se envíe el formulario si hay errores
+form.addEventListener('submit', (e) => { 
+  e.preventDefault(); 
 
-  let errors = []; // Almacena los errores
+  let errors = [];
 
-  if (nameInput.value.trim() === '') { // Verifica si el campo de nombre está vacío
-    errors.push('El campo de nombre es obligatorio.'); // Agrega un mensaje de error
+  if (nameInput.value.trim() === '') {
+    errors.push('El campo de nombre es obligatorio.'); 
   }
 
-  if (phoneInput.value.trim() === '') { // Verifica si el campo de teléfono está vacío
-    errors.push('El campo de teléfono es obligatorio.'); // Agrega un mensaje de error
-  } else if (!/^\d+$/.test(phoneInput.value)) { // Verifica si el campo de teléfono tiene solo números
-    errors.push('El campo de teléfono debe contener solo números.'); // Agrega un mensaje de error
+  if (phoneInput.value.trim() === '') { 
+    errors.push('El campo de teléfono es obligatorio.'); 
+  } else if (!/^\d+$/.test(phoneInput.value)) { 
+    errors.push('El campo de teléfono debe contener solo números.'); 
   }
 
-  if (emailInput.value.trim() === '') { // Verifica si el campo de correo electrónico está vacío
-    errors.push('El campo de correo electrónico es obligatorio.'); // Agrega un mensaje de error
-  } else if (!/\S+@\S+\.\S+/.test(emailInput.value)) { // Verifica si el campo de correo electrónico tiene un formato válido
-    errors.push('El campo de correo electrónico debe tener un formato válido.'); // Agrega un mensaje de error
+  if (emailInput.value.trim() === '') { 
+    errors.push('El campo de correo electrónico es obligatorio.'); 
+  } else if (!/\S+@\S+\.\S+/.test(emailInput.value)) { 
+    errors.push('El campo de correo electrónico debe tener un formato válido.'); 
   }
 
-  if (messageInput.value.trim() === '') { // Verifica si el campo de mensaje está vacío
-    errors.push('El campo de mensaje es obligatorio.'); // Agrega un mensaje de error
+  if (messageInput.value.trim() === '') {
+    errors.push('El campo de mensaje es obligatorio.'); 
   }
 
-  if (errors.length > 0) { // Si hay errores
-    alert(errors.join('\n')); // Muestra los mensajes de error
-  } else { // Si no hay errores
-   form.submit(); // Envía el formulario
+  if (errors.length > 0) { 
+    alert(errors.join('\n'));
+  } else { 
+   form.submit();
 
 
 
@@ -56,26 +56,43 @@ form.addEventListener('submit', (e) => { // Agrega un evento al enviar el formul
     <p>Mensaje: ${messageInput.value}</p>
   `;
   pdf.fromHTML(pdfContent);
-  pdf.save('formulario.pdf'); // Descarga el PDF con el nombre "formulario.pdf"
+  pdf.save('formulario.pdf');
   
-  form.submit(); // Envía el formulario
+
+    
+  form.addEventListener('submit', function(event) {
+    event.preventDefault(); 
+
+    const nombre = document.getElementById('name').value;
+    const telefono = document.getElementById('phone').value;
+    const email = document.getElementById('email').value;
+    const mensaje = document.getElementById('message').value;
+
+    const datosFormulario = {
+      nombre: [nombre],
+      telefono: [telefono],
+      email: [email],
+      mensaje: [mensaje]
+    };
+
+    console.log(datosFormulario);
+  });
+
+  // form.submit(); // Envía el formulario
  
 }
 
 });
 
 
-// Agregar un evento submit al formulario
 form.addEventListener('submit', function(event) {
-    event.preventDefault(); // Evita que se recargue la página al enviar el formulario
+    event.preventDefault(); 
   
-    // Obtener los valores de los campos del formulario
-    const nombre = document.querySelector('#name').value;
-    const telefono = document.querySelector('#phone').value;
-    const email = document.querySelector('#email').value;
-    const mensaje = document.querySelector('#message').value;
+    const nombre = document.getElementById('name').value;
+    const telefono = document.getElementById('phone').value;
+    const email = document.getElementById('email').value;
+    const mensaje = document.getElementById('message').value;
   
-    // Crear un objeto con arrays
     const datosFormulario = {
       nombre: [nombre],
       telefono: [telefono],
@@ -83,7 +100,6 @@ form.addEventListener('submit', function(event) {
       mensaje: [mensaje]
     };
   
-    // Mostrar los datos por consola
     console.log(datosFormulario);
   });
   
