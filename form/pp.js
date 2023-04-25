@@ -75,6 +75,8 @@ const modeloInput = document.getElementById('modelo');
 const form = document.querySelector('form');
 const mandandoDatosBtn = document.getElementById('mandandoDatos');
 
+
+
 // Agregar un controlador de eventos para el botón de envío
 mandandoDatosBtn.addEventListener('click', (e) => {
   e.preventDefault(); // Prevenir el envío del formulario

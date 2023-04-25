@@ -69,13 +69,18 @@ form.addEventListener('submit', (e) => {
     const mensaje = document.getElementById('message').value;
 
     const datosFormulario = {
-      nombre: [nombre],
-      telefono: [telefono],
-      email: [email],
-      mensaje: [mensaje]
-    };
+      nombre: nombre,
+      telefono: telefono,
+      email: email,
+      mendaje: mensaje,
 
-    console.log(datosFormulario);
+    };
+  
+    const arrayDatos = [];
+    arrayDatos.push(datosFormulario);
+  
+     console.log(arrayDatos);
+  
   });
 
   // form.submit(); // Envía el formulario
