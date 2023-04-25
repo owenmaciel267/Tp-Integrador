@@ -73,7 +73,7 @@ const swiper = new Swiper('.swiper', {
 
 new TypeIt("#element", {
   speed: 50,
-  startDelay: 900,
+  startDelay: 100,
   loop:true,
   loopDelay: null
 })
@@ -82,6 +82,6 @@ new TypeIt("#element", {
 
   .delete("Speedealers", {delay: 1000})
   .pause(3000)
-  .type("En este lugar encontras lo mejor!!!",{delay: 100})
+  .type("En este lugar encontras lo mejor!!!",{delay: 1000})
 
   .go();
